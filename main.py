@@ -1,12 +1,9 @@
-def f(n):
-    if n == 1:
-        return 0
-    if n == 2:
-        return 1
-    return f(n - 1) + f(n - 2)
- 
- 
 n = int(input())
-print(f(n))
+fib1 = 0
+fib2 = 1
+print(fib1)
+print(fib2)
+for i in range(2, n):
+    fib1, fib2 = fib2, fib1 + fib2
+    print(fib2)
 
-print('Hello, world!')
